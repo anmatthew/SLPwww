@@ -55,13 +55,6 @@
     }
     header { border-bottom: 1px solid #333; }
     footer { border-top: 1px solid #333; }
-    .top-image {
-      display: block;
-      max-width: 240px;
-      width: 100%;
-      height: auto;
-      margin: 0 0 12px;
-    }
     h1 {
       margin: 0;
       font-family: var(--font);
@@ -73,6 +66,14 @@
       max-width: 48rem;
       margin: 0 auto;
       padding: 24px 16px 40px;
+    }
+    /* Full-width image in the page body */
+    .top-image {
+      display: block;
+      width: 100vw;
+      max-width: 100vw;
+      height: auto;
+      margin: 0 calc(50% - 50vw) 12px;
     }
     p, a, strong {
       font-family: var(--font);
