@@ -8,7 +8,7 @@
           .iw_stretch { min-width: 100% !important; }
       </style>
       <script type="application/ld+json">
-            {"@context":"https://schema.org/","@type":"Corporation","name":"OpenText","url":"https://www.opentext.com/","logo":"https://www.opentext.com/assets/images/opentext-logo-datatype.png","contactPoint":{"@type":"ContactPoint","contactType":"customer service","contactOption"},"sameAs":["https://twitter.com/OpenText","https://www.youtube.com/user/opentextcorp","https://www.linkedin.com/company/opentext"]}
+            {"@context":"https://schema.org/","@type":"Corporation","name":"OpenText","url":"https://www.opentext.com/","logo":"https://www.opentext.com/assets/images/opentext-logo-datatype.png","contactPoint":{"@type":"ContactPoint","contactType":"customer service"},"sameAs":["https://twitter.com/OpenText","https://www.youtube.com/user/opentextcorp","https://www.linkedin.com/company/opentext"]}
         </script>
       <link rel="stylesheet" type="text/css" href="https://assets.ot.digital/min/m/v1/css/opentext.min.css">
       <meta name="twitter:url" content="https://www.opentext.com/solutions/industry/government">
@@ -74,7 +74,7 @@
                      </header>
                   </div>
 
-   <div class="iw_component" id="iw_comp1744319528778"><style>#iw_comp1744319528778{}</style><section class="section section-light-down section-top section-trim-bottom">
+   <div class="iw_component" id="iw_comp1744319528778"><section class="section section-light-down section-top section-trim-bottom">
    <div class="container">
       <div class="row row-cols-1 row-cols-lg-2">
          <div class="col">
@@ -89,7 +89,8 @@
       </div>
    </div>
 </section></div>
-   <div class="iw_component" id="iw_comp1744319528794"><style>#iw_comp1744319528794{}</style><nav class="nav-inpage section" aria-label="in page">
+
+   <div class="iw_component" id="iw_comp1744319528794"><nav class="nav-inpage section" aria-label="in page">
    <div class="container">
       <h2 class="nav-inpage-title">On this page: </h2><button class="nav-inpage-btn btn btn-down" type="button" data-toggle="collapse" data-target="#nav-inpage-target" aria-expanded="false" aria-controls="nav-inpage-target">On this page</button><div id="nav-inpage-target" class="collapse">
          <ul class="nav-inpage-list">
@@ -103,42 +104,34 @@
    </div>
 </nav><script>
 function initTabsFromHash(href) {
-
-	// Handle relative/absolute URL paths
     if (href.startsWith("/") || href.startsWith("http")) {
         window.location.href = href;
         return;
     }
-	
     const fragment = href.substring(1);
-
     if (fragment.startsWith("tab_label")) {
         const tab = document.getElementById(fragment + "-tab");
         if (tab) {
-            // Bootstrap 4 requires jQuery
             $(tab).tab("show");
-			 tab.scrollIntoView({ behavior: "smooth", block: "start" });
-			let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname
-			window.history.pushState({
-				path: newurl
-			}, '', newurl);			 
+            tab.scrollIntoView({ behavior: "smooth", block: "start" });
+            let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.pushState({ path: newurl }, '', newurl);
         }
     } else {
-        // fallback: scroll to anchor normally
         const target = document.getElementById(fragment);
         if (target) target.scrollIntoView();
     }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     if (window.location.hash) {
         initTabsFromHash(window.location.hash);
     }
 });
 </script></div>
-   <div class="iw_component" id="iw_comp1744319528804"><style>#iw_comp1744319528804{}</style><section class="section">
+
+   <div class="iw_component" id="iw_comp1744319528804"><section class="section">
    <div class="container">
-      <header class="section-header section-header-sub  sr-only">
+      <header class="section-header section-header-sub sr-only">
          <div class="section-header-body">
             <h2 class="section-header-title">Certifications</h2>
          </div>
@@ -157,12 +150,12 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
    </div>
 </section></div>
-   <div class="iw_component" id="iw_comp1744319528814"><style>#iw_comp1744319528814{}</style><section class="section" id="innovations">
+
+   <div class="iw_component" id="iw_comp1744319528814"><section class="section" id="innovations">
    <div class="container">
       <header class="section-header section-header-sub">
          <div class="section-header-body">
             <h2 class="section-header-title">Discover our government industry solution innovations</h2>
-            <p class="section-header-subtitle"></p>
          </div>
       </header>
       <div class="d-none d-xl-flex row row-cols-3 row-gap-extra-responsive">
@@ -195,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="colcade-item mb-4 mb-lg-6"><img class="img-fluid rounded mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-innovations-card-3-416x234-en.png" width="720" height="404" alt="A person holding an ipad with holographic cloud icons around it"><h3 class="card-title">Public sector cloud solutions</h3>
                <div class="content-box mt-2 mt-xl-3">
-                  <p>Explore a collection of government IT solutions authorized by government to run securely in the cloud. See the wide variety of <a href="/solutions/fedramp-authorized">FedRAMP-authorized solutions</a> and others designed for sovereign cloud requirements set by Canada (Protected B).</p>
+                  <p>Explore a collection of government IT solutions authorized by government to run securely in the cloud. See the wide variety of <a href="https://www.opentext.com/solutions/fedramp-authorized">FedRAMP-authorized solutions</a> and others designed for sovereign cloud requirements set by Canada (Protected B).</p>
                </div>
                <div class="mt-2 mt-xl-3"><a class="more font-weight-bold" href="https://www.opentext.com/solutions/industry/public-sector">See public sector solutions</a></div>
             </div>
@@ -210,7 +203,8 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
    </div>
 </section></div>
-   <div class="iw_component" id="iw_comp1744319528821"><style>#iw_comp1744319528821{}</style><section class="section" id="market-solutions">
+
+   <div class="iw_component" id="iw_comp1744319528821"><section class="section" id="market-solutions">
    <div class="container">
       <header class="section-header section-header-sub">
          <div class="section-header-body">
@@ -249,30 +243,27 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
    </div>
 </section><script type="text/javascript">
-					
-					window.addEventListener('load', hideControls);
-					window.addEventListener('resize', hideControls);
-					
-					function hideControls()
-					{
-					    var gliderControls = document.querySelectorAll(".glider-controls");
-						for(i=0;i < gliderControls.length; i++)
-						{
-						   var btns = gliderControls[i].querySelectorAll("button.disabled[id$=prev], button.disabled[id$=next]");
-						   
-						   if(btns.length > 1)
-						   {
-						     gliderControls[i].style.visibility = "hidden";
-						   }
-						   else
-						   {
-						     gliderControls[i].style.visibility = "visible";
-						   }
-						}
-					}
-			</script></div>
-   <div class="iw_component" id="iw_comp1744319528823"><style> #iw_comp1744319528823 {display: none !important} </style></div>
-   <div class="iw_component" id="iw_comp1744319528851"><style>#iw_comp1744319528851{}</style><section class="section" id="more-solutions">
+                    window.addEventListener('load', hideControls);
+                    window.addEventListener('resize', hideControls);
+                    function hideControls()
+                    {
+                        var gliderControls = document.querySelectorAll(".glider-controls");
+                        for(i=0;i < gliderControls.length; i++)
+                        {
+                           var btns = gliderControls[i].querySelectorAll("button.disabled[id$=prev], button.disabled[id$=next]");
+                           if(btns.length > 1)
+                           {
+                             gliderControls[i].style.visibility = "hidden";
+                           }
+                           else
+                           {
+                             gliderControls[i].style.visibility = "visible";
+                           }
+                        }
+                    }
+            </script></div>
+
+   <div class="iw_component" id="iw_comp1744319528851"><section class="section" id="more-solutions">
    <div class="container">
       <header class="section-header section-header-sub">
          <div class="section-header-body">
@@ -284,8 +275,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <nav class="nav-slider-container" aria-label="offerings">
                <ul class="nav nav-slider nav-slider-select nav-slider-vertical align-items-md-end js-nav-slider js-nav-slider-mobile" role="tablist">
                   <li class="nav-item" role="presentation"><a data-toggle="tab" role="tab" aria-selected="true" class="nav-link active" id="tab_labelb009dd751-tab" href="#tab_labelb009dd751" aria-controls="tab_labelb009dd751">Government recordkeeping</a></li>
-                  <li class="nav-item" role="presentation"><a data-toggle="tab" role="tab" aria-selected="true" class="nav-link" id="tab_labelb009dd752-tab" href="#tab_labelb009dd752" aria-controls="tab_labelb009dd752">IT management platform</a></li>
-                  <li class="nav-item" role="presentation"><a data-toggle="tab" role="tab" aria-selected="true" class="nav-link" id="tab_labelb009dd753-tab" href="#tab_labelb009dd753" aria-controls="tab_labelb009dd753">Government-specific professional services</a></li>
+                  <li class="nav-item" role="presentation"><a data-toggle="tab" role="tab" aria-selected="false" class="nav-link" id="tab_labelb009dd752-tab" href="#tab_labelb009dd752" aria-controls="tab_labelb009dd752">IT management platform</a></li>
+                  <li class="nav-item" role="presentation"><a data-toggle="tab" role="tab" aria-selected="false" class="nav-link" id="tab_labelb009dd753-tab" href="#tab_labelb009dd753" aria-controls="tab_labelb009dd753">Government-specific professional services</a></li>
                </ul><svg class="nav-slider-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" role="img" aria-hidden="true" focusable="false">
                   <path d="M1.83331 1.16666L5.99998 5.33332L10.1666 1.16666" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path></svg></nav>
          </div>
@@ -305,8 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul class="list-unstyled list-space-lg mb-0">
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/content-management-for-government">Manage public sector records with compliance</a></h3>
-                              <p class="text-sm mb-0">Consolidate government document management with OpenText™ Content Management for Government,
-                                 now authorized on FedRAMP and Protected B</p>
+                              <p class="text-sm mb-0">Consolidate government document management with OpenText™ Content Management for Government, now authorized on FedRAMP and Protected B</p>
                            </li>
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/ai-and-analytics">Predict, act, and win with real-time analytics</a></h3>
@@ -318,17 +308,15 @@ document.addEventListener("DOMContentLoaded", function () {
                            </li>
                         </ul>
                      </div>
-                     <div class="col-12 col-lg-6 ">
+                     <div class="col-12 col-lg-6">
                         <ul class="list-unstyled list-space-lg mb-0">
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/process-automation">Maximize efficiency with AI-powered automation</a></h3>
-                              <p class="text-sm mb-0">Streamline operations using OpenText™ Process Automation software, now authorized
-                                 on FedRAMP</p>
+                              <p class="text-sm mb-0">Streamline operations using OpenText™ Process Automation software, now authorized on FedRAMP</p>
                            </li>
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/capture-intelligent-document-processing">Boost government efficiency with intelligent capture and AI</a></h3>
-                              <p class="text-sm mb-0">Simplify processing using capture, AI, and automation with OpenText capture and intelligent
-                                 document processing</p>
+                              <p class="text-sm mb-0">Simplify processing using capture, AI, and automation with OpenText capture and intelligent document processing</p>
                            </li>
                         </ul>
                      </div>
@@ -348,27 +336,23 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul class="list-unstyled list-space-lg mb-0">
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/saas/core-service-management">Elevate user experiences with AI and self-service</a></h3>
-                              <p class="text-sm mb-0">Improve IT delivery using generative AI and automation with OpenText™ Core Service
-                                 Management, now authorized on FedRAMP</p>
+                              <p class="text-sm mb-0">Improve IT delivery using generative AI and automation with OpenText™ Core Service Management, now authorized on FedRAMP</p>
                            </li>
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/universal-discovery-and-cmdb">Operate with complete and scalable discovery</a></h3>
-                              <p class="text-sm mb-0">Strengthen your IT foundation using OpenText™ Universal Discovery and CMDB, now authorized
-                                 on FedRAMP</p>
+                              <p class="text-sm mb-0">Strengthen your IT foundation using OpenText™ Universal Discovery and CMDB, now authorized on FedRAMP</p>
                            </li>
                         </ul>
                      </div>
-                     <div class="col-12 col-lg-6 ">
+                     <div class="col-12 col-lg-6">
                         <ul class="list-unstyled list-space-lg mb-0">
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/asset-management">Control software and hardware costs</a></h3>
-                              <p class="text-sm mb-0">Centralize procurement and asset tracking with OpenText™ Asset Management, now authorized
-                                 on FedRAMP</p>
+                              <p class="text-sm mb-0">Centralize procurement and asset tracking with OpenText™ Asset Management, now authorized on FedRAMP</p>
                            </li>
                            <li>
                               <h3 class="h5 mb-1"><a class="more" href="https://www.opentext.com/products/project-and-portfolio-management">Drive results with strategy and visibility</a></h3>
-                              <p class="text-sm mb-0">Enhance productivity with OpenText™ Project and Portfolio Management, now authorized
-                                 on FedRAMP</p>
+                              <p class="text-sm mb-0">Enhance productivity with OpenText™ Project and Portfolio Management, now authorized on FedRAMP</p>
                            </li>
                         </ul>
                      </div>
@@ -392,9 +376,6 @@ document.addEventListener("DOMContentLoaded", function () {
                            </li>
                         </ul>
                      </div>
-                     <div class="col-12 col-lg-6 ">
-                        <ul class="list-unstyled list-space-lg mb-0"></ul>
-                     </div>
                   </div>
                </div>
             </div>
@@ -402,56 +383,38 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
    </div>
 </section></div>
-   <div class="iw_component" id="iw_comp1744319528858"><style>#iw_comp1744319528858{}</style><section class="section bg-img-norepeat " id="learn-more">
+
+   <div class="iw_component" id="iw_comp1744319528858"><section class="section bg-img-norepeat" id="learn-more">
    <div class="container">
       <header class="section-header section-header-sub">
          <div class="section-header-body">
-            <h2 class="section-header-title">
-               <div>Learn more about Government industry solutions</div>
-            </h2>
+            <h2 class="section-header-title">Learn more about Government industry solutions</h2>
          </div>
       </header>
       <div class="row row-gap align-items-lg-center">
          <div class="col-12 col-lg-6 text-lg-center">
-			 <iframe 
-  				class="vidyard_iframe" 
-  				src="//play.vidyard.com/CjQHPCJYQuDYJ7AANzvckz.html?" 
- 			 	width="640" 
-  				height="360" 
-  				scrolling="no" 
-  				frameborder="0" 
-  				allowtransparency="true" 
-  				allowfullscreen>
-			</iframe>
-			<p>See how FedRAMP-authorized government solutions deliver next-level citizen services</p>
+             <iframe 
+                  class="vidyard_iframe" 
+                  src="https://play.vidyard.com/CjQHPCJYQuDYJ7AANzvckz.html?" 
+              	width="640" 
+                  height="360" 
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowtransparency="true" 
+                  allowfullscreen>
+            </iframe>
+            <p>See how FedRAMP-authorized government solutions deliver next-level citizen services</p>
          </div>
          <div class="col-12 col-lg-5 offset-lg-1">
             <div class="content-box">
-               <p>
-                  <div>Discover FedRAMP-authorized solutions for enterprise content management, process automation, and case management from OpenText™ Cloud for Government. The FedRAMP marketplace only allows software that the US government has verified and validated against hundreds of cloud security standards. Watch this video and learn how you can enable comprehensive content management while strengthening security, compliance, and control.</div>
-               </p>
-               <p>
-                  <div></div>
-               </p>
+               <p>Discover FedRAMP-authorized solutions for enterprise content management, process automation, and case management from OpenText™ Cloud for Government. The FedRAMP marketplace only allows software that the US government has verified and validated against hundreds of cloud security standards. Watch this video and learn how you can enable comprehensive content management while strengthening security, compliance, and control.</p>
             </div>
          </div>
       </div>
    </div>
-</section><script>
-          document.addEventListener('DOMContentLoaded', function () {
-            var imgArr = document.getElementsByClassName('img-fluid rounded mb-md-2 mb-lg-0 w-100');
-            for(var index = 0; index < imgArr.length; index++) {
-                var img = imgArr[index];
-                if(img.getAttribute('resized')==='false') {
-                    // alert(img.width+' x '+img.height+' Resized:'+img.resized);
-                    img.setAttribute('resized', true);
-                    img.setAttribute('width', img.width);
-                    img.setAttribute('height', img.height);
-                }
-            }
-        }, true);
-      </script></div>
-   <div class="iw_component" id="iw_comp1744319528859"><style>#iw_comp1744319528859{}</style><section class="section" id="resources">
+</section></div>
+
+   <div class="iw_component" id="iw_comp1744319528859"><section class="section" id="resources">
    <div class="container">
       <header class="section-header section-header-sub">
          <div class="section-header-body">
@@ -471,34 +434,34 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="glider-contain">
                <div id="tab_label-1-glider" class="row row-cols-2 row-cols-md-4 card-layout glider-edge js-glider" data-options="{&#34;exactWidth&#34;: true,&#34;itemWidth&#34;: 320,&#34;slidesToShow&#34;: &#34;auto&#34;,&#34;slidesToScroll&#34;: &#34;auto&#34;,&#34;scrollLock&#34;: false,&#34;arrows&#34;: {&#34;prev&#34;: &#34;#tab_label-1-glider-prev&#34;,&#34;next&#34;: &#34;#tab_label-1-glider-next&#34;},&#34;responsive&#34;: [{&#34;breakpoint&#34;: 720,&#34;settings&#34;: {&#34;itemWidth&#34;:328}},{&#34;breakpoint&#34;: 968,&#34;settings&#34;: {&#34;itemWidth&#34;:336}}]}">
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-US-Air-Force-v2-304x192-en.png" width="416" height="274" alt="United States Air Force logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-US-Air-Force-v2-304x192-en.png" width="416" height="274" alt="United States Air Force logo">
                         <h3 class="card-title-sm mb-1">US Air Force shifted security left into the DevSecOps application lifecycle</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/united-states-air-force"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/united-states-air-force"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/1750791619377_opentext-image-government-resources-logo-govt-canada-304x192-en.png" width="416" height="274" alt="Government of Canada logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/1750791619377_opentext-image-government-resources-logo-govt-canada-304x192-en.png" width="416" height="274" alt="Government of Canada logo">
                         <h3 class="card-title-sm mb-1">Canadian government can now promote transparency and gain valuable insights</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/government-of-canada"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/government-of-canada"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/resources/customer-success/los-angeles-county-human-resources-department-logo-416x274.png" width="416" height="274" alt="County of Los Angeles, Department of Human Resources logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/resources/customer-success/los-angeles-county-human-resources-department-logo-416x274.png" width="416" height="274" alt="County of Los Angeles, Department of Human Resources logo">
                         <h3 class="card-title-sm mb-1">County of Los Angeles saved millions a year with a digital makeover</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/county-of-los-angeles-department-of-human-resources-3"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/county-of-los-angeles-department-of-human-resources-3"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-auckland-transport-v2-304x192-en.png" width="416" height="274" alt="Auckland Transport logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-auckland-transport-v2-304x192-en.png" width="416" height="274" alt="Auckland Transport logo">
                         <h3 class="card-title-sm mb-1">Auckland Transport achieved safer roads and more efficient public transportation</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/auckland-transport"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/auckland-transport"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-dubai-police-v2-304x192-en.png" width="416" height="274" alt="Dubai Police logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-logo-dubai-police-v2-304x192-en.png" width="416" height="274" alt="Dubai Police logo">
                         <h3 class="card-title-sm mb-1">Dubai Police can now quickly detect and find the vehicles of wanted citizens</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/dubai-police"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/dubai-police"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
-                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/resources/customer-success/opentext-industry-logo-publicsector-416x274.png" width="416" height="274" alt="Department of Energy—Office of Legacy Management logo"><div class="card-eyebrow"></div>
+                     <div class="card card-body shadow p-2 p-xl-3"><img class="img-fluid mb-2 mb-xl-3" src="https://www.opentext.com/assets/images/resources/customer-success/opentext-industry-logo-publicsector-416x274.png" width="416" height="274" alt="Department of Energy—Office of Legacy Management logo">
                         <h3 class="card-title-sm mb-1">A government agency was able to digitize, centralize, and categorize records</h3>
-                        <p class="card-text mb-1"></p><a class="stretched-link mt-auto" href="https://www.opentext.com/customers/department-of-energy-office-of-legacy-management"><span class="more more-bold">Learn more</span></a></div>
+                        <a class="stretched-link mt-auto" href="https://www.opentext.com/customers/department-of-energy-office-of-legacy-management"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                </div>
                <div class="d-flex justify-content-between gap"><a class="btn btn-primary" href="https://www.opentext.com/customers">See more success stories</a><div class="glider-controls ml-auto"><button id="tab_label-1-glider-prev" class="btn btn-primary btn-circle disabled" type="button"><svg class="btn-icon" width="20" height="20" viewBox="0 0 21 20" role="img" aria-hidden="true" focusable="false">
@@ -507,23 +470,20 @@ document.addEventListener("DOMContentLoaded", function () {
                </div>
             </div>
          </div>
-         <div id="tab_label-2" class="tab-pane fade " role="tabpanel" aria-labelledby="tab_label-2-tab">
+         <div id="tab_label-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tab_label-2-tab">
             <div class="row card-layout">
                <div class="col-12 col-lg-6 mb-2 mb-md-3 mb-lg-0">
                   <div class="card card-body card-primary p-2 p-xl-3">
-                     <div class="card-eyebrow"></div>
                      <h3 class="card-title">A quick guide to the partnership between OpenText and AWS</h3><a class="mt-auto stretched-link text-reset" target="_blank" href="https://www.opentext.com/assets/documents/en-US/pdf/delivering-fedramp-authorized-information-management-for-government-ebook-en.pdf"><span class="more more-bold">Read the ebook</span></a></div>
                </div>
                <div class="col-lg-6 d-none d-lg-block">
                   <div class="row row-cols-2 card-layout h-100">
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">Data isn’t enough: Government AI requires enterprise knowledge</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/point-of-view/data-isnt-enough-government-ai-requires-enterprise-knowledge-pov-en.pdf"><span class="more more-bold">Read the point of view</span></a></div>
                      </div>
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">Make constituent communications more impactful and effective</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/assets/documents/en-US/pdf/opentext-eb-deliver-impactful-constituent-interactions-through-improved-communication-orchestration-and-execution-en.pdf"><span class="more more-bold">Read the brief</span></a></div>
                      </div>
                   </div>
@@ -532,38 +492,31 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="row row-cols-4 card-layout">
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">Enabling smarter government with cloudbased information management</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/solution-overview/enabling-smarter-government-with-cloud-based-information-management-slo-en.pdf"><span class="more more-bold">Read the solution overview</span></a></div>
                      </div>
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">OpenText Content Management for Government FasTrak</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/service-overview/opentext-content-management-for-government-fastrak-sro-en.pdf"><span class="more more-bold">Read the service overview</span></a></div>
                      </div>
                   </div>
                </div>
-               <div class="col-12 d-none d-lg-block"></div>
             </div>
             <div class="glider-contain d-lg-none">
                <div id="tab_label-2-glider" class="row row-cols-1 row-cols-md-2 card-layout glider-edge-sm glider-edge-md js-glider" data-options="{&#34;slidesToShow&#34;: 1.2,&#34;slidesToScroll&#34;: &#34;auto&#34;,&#34;scrollLock&#34;: false,&#34;arrows&#34;: {&#34;prev&#34;: &#34;#tab_label-2-glider-prev&#34;,&#34;next&#34;: &#34;#tab_label-2-glider-next&#34;},&#34;responsive&#34;: [{&#34;breakpoint&#34;: 576,&#34;settings&#34;: {&#34;slidesToShow&#34;: 1.7}},{&#34;breakpoint&#34;: 720,&#34;settings&#34;: {&#34;slidesToShow&#34;: 2.15}}]}">
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">Data isn’t enough: Government AI requires enterprise knowledge</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/point-of-view/data-isnt-enough-government-ai-requires-enterprise-knowledge-pov-en.pdf"><span class="more more-bold">Read the point of view</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">Make constituent communications more impactful and effective</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/assets/documents/en-US/pdf/opentext-eb-deliver-impactful-constituent-interactions-through-improved-communication-orchestration-and-execution-en.pdf"><span class="more more-bold">Read the brief</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">Enabling smarter government with cloudbased information management</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/solution-overview/enabling-smarter-government-with-cloud-based-information-management-slo-en.pdf"><span class="more more-bold">Read the solution overview</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">OpenText Content Management for Government FasTrak</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/service-overview/opentext-content-management-for-government-fastrak-sro-en.pdf"><span class="more more-bold">Read the service overview</span></a></div>
                   </div>
                </div>
@@ -574,23 +527,21 @@ document.addEventListener("DOMContentLoaded", function () {
                </div>
             </div>
          </div>
-         <div id="tab_label-3" class="tab-pane fade " role="tabpanel" aria-labelledby="tab_label-3-tab">
+         <div id="tab_label-3" class="tab-pane fade" role="tabpanel" aria-labelledby="tab_label-3-tab">
             <div class="glider-contain">
                <div id="tab_label-3-glider" class="row row-cols-2 row-cols-md-4 card-layout glider-edge js-glider" data-options="{&#34;exactWidth&#34;: true,&#34;itemWidth&#34;: 320,&#34;slidesToShow&#34;: &#34;auto&#34;,&#34;slidesToScroll&#34;: &#34;auto&#34;,&#34;scrollLock&#34;: false,&#34;arrows&#34;: {&#34;prev&#34;: &#34;#tab_label-3-glider-prev&#34;,&#34;next&#34;: &#34;#tab_label-3-glider-next&#34;},&#34;responsive&#34;: [{&#34;breakpoint&#34;: 720,&#34;settings&#34;: {&#34;itemWidth&#34;:328}},{&#34;breakpoint&#34;: 968,&#34;settings&#34;: {&#34;itemWidth&#34;:336}}]}">
                   <div class="col mb-4">
                      <div class="card shadow"><img class="card-img-top img-fluid" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-blog-blog1-304x192-en.png" width="304" height="192" alt="Digital cloud files icons with a person working on a laptop in the background"><div class="card-body d-flex flex-column p-2 p-xl-3">
                            <div class="card-eyebrow">September 20, 2024</div>
                            <h3 class="card-title-sm mb-1">FedRAMP authorized: OpenText solutions help government agencies achieve objectives</h3>
-                           <p class="card-text mb-1">OpenText has FedRAMP-authorized cloud solutions for federal, state, and local government
-                              agencies.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/fedramp-authorized-opentext-solutions-help-government-agencies-achieve-mission-critical-objectives/"><span class="more more-bold">Read the blog</span></a></div>
+                           <p class="card-text mb-1">OpenText has FedRAMP-authorized cloud solutions for federal, state, and local government agencies.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/fedramp-authorized-opentext-solutions-help-government-agencies-achieve-mission-critical-objectives/"><span class="more more-bold">Read the blog</span></a></div>
                      </div>
                   </div>
                   <div class="col mb-4">
                      <div class="card shadow"><img class="card-img-top img-fluid" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-blog-blog2-304x192-en.png" width="304" height="192" alt="A person wearing a suit working on a holographic screen"><div class="card-body d-flex flex-column p-2 p-xl-3">
                            <div class="card-eyebrow">March 7, 2025</div>
                            <h3 class="card-title-sm mb-1">AI-first government productivity and efficiency</h3>
-                           <p class="card-text mb-1">Build an AI strategy for government use cases with a content-focused knowledge management
-                              approach.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/ai-first-government-productivity-and-efficiency/"><span class="more more-bold">Read the blog</span></a></div>
+                           <p class="card-text mb-1">Build an AI strategy for government use cases with a content-focused knowledge management approach.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/ai-first-government-productivity-and-efficiency/"><span class="more more-bold">Read the blog</span></a></div>
                      </div>
                   </div>
                   <div class="col mb-4">
@@ -604,8 +555,7 @@ document.addEventListener("DOMContentLoaded", function () {
                      <div class="card shadow"><img class="card-img-top img-fluid" src="https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-government-resources-blog-blog4-304x192-en.png" width="304" height="192" alt="A holographic display of digital locks and security with a government building in the background"><div class="card-body d-flex flex-column p-2 p-xl-3">
                            <div class="card-eyebrow">November 19, 2024</div>
                            <h3 class="card-title-sm mb-1">OpenText helps U.S. federal agencies deliver ITSM more securely with less complexity</h3>
-                           <p class="card-text mb-1">Discover how agencies can deliver reliable and secure IT services to employees, citizens,
-                              and more.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/opentext-helps-u-s-federal-agencies-deliver-itsm-more-securely-with-less-complexity/"><span class="more more-bold">Read the blog</span></a></div>
+                           <p class="card-text mb-1">Discover how agencies can deliver reliable and secure IT services to employees, citizens, and more.</p><a class="stretched-link mt-auto" target="_blank" href="https://blogs.opentext.com/opentext-helps-u-s-federal-agencies-deliver-itsm-more-securely-with-less-complexity/"><span class="more more-bold">Read the blog</span></a></div>
                      </div>
                   </div>
                   <div class="col mb-4">
@@ -623,23 +573,20 @@ document.addEventListener("DOMContentLoaded", function () {
                </div>
             </div>
          </div>
-         <div id="tab_label-4" class="tab-pane fade " role="tabpanel" aria-labelledby="tab_label-4-tab">
+         <div id="tab_label-4" class="tab-pane fade" role="tabpanel" aria-labelledby="tab_label-4-tab">
             <div class="row card-layout">
                <div class="col-12 col-lg-6 mb-2 mb-md-3 mb-lg-0">
                   <div class="card card-body card-primary p-2 p-xl-3">
-                     <div class="card-eyebrow"></div>
                      <h3 class="card-title">OpenText Cloud for Government solution achieves FedRAMP authorization</h3><a class="mt-auto stretched-link text-reset" href="https://www.opentext.com/about/press-releases/opentext-cloud-for-government-solution-achieves-fedramp-authorization"><span class="more more-bold">Read the press release</span></a></div>
                </div>
                <div class="col-lg-6 d-none d-lg-block">
                   <div class="row row-cols-2 card-layout h-100">
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">OpenText IT Management Platform achieves FedRAMP® authorization</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/about/press-releases/opentext-it-management-platform-achieves-fedramp--authorization"><span class="more more-bold">Read the press release</span></a></div>
                      </div>
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">Public sector contracts summary</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/documentation/public-sector-contracts-summary-documentation-en.pdf"><span class="more more-bold">Read the summary</span></a></div>
                      </div>
                   </div>
@@ -648,53 +595,41 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="row row-cols-4 card-layout">
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">OpenText public sector industry solutions</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/solutions/industry/public-sector"><span class="more more-bold">Learn more</span></a></div>
                      </div>
                      <div class="col">
                         <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
                            <h3 class="card-title-sm mb-1">Transform government services with personalized communications</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/en/media/solution-overview/transform-government-services-with-personalized-communications-slo-en.pdf"><span class="more more-bold">Read the solution overview</span></a></div>
-					 </div>
-					  <div class="col">
-                        <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
-                           <h3 class="card-title-sm mb-1">State of California SLP Price List</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/en/media/price-list/opentext-ca-slp-price-list-en.pdf"><span class="more more-bold">View the Public Sector Price list </span></a></div>
                      </div>
-					 </div>
+                     <div class="col">
+                        <div class="card card-body shadow p-2 p-xl-3">
+                           <h3 class="card-title-sm mb-1">State of California SLP Price List</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/en/media/price-list/opentext-ca-slp-price-list-en.pdf"><span class="more more-bold">View the Public Sector Price list</span></a></div>
+                     </div>
                   </div>
                </div>
-               <div class="col-12 d-none d-lg-block"></div>
             </div>
             <div class="glider-contain d-lg-none">
                <div id="tab_label-4-glider" class="row row-cols-1 row-cols-md-2 card-layout glider-edge-sm glider-edge-md js-glider" data-options="{&#34;slidesToShow&#34;: 1.2,&#34;slidesToScroll&#34;: &#34;auto&#34;,&#34;scrollLock&#34;: false,&#34;arrows&#34;: {&#34;prev&#34;: &#34;#tab_label-4-glider-prev&#34;,&#34;next&#34;: &#34;#tab_label-4-glider-next&#34;},&#34;responsive&#34;: [{&#34;breakpoint&#34;: 576,&#34;settings&#34;: {&#34;slidesToShow&#34;: 1.7}},{&#34;breakpoint&#34;: 720,&#34;settings&#34;: {&#34;slidesToShow&#34;: 2.15}}]}">
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">OpenText IT Management Platform achieves FedRAMP® authorization</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/about/press-releases/opentext-it-management-platform-achieves-fedramp--authorization"><span class="more more-bold">Read the press release</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">Public sector contracts summary</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/media/documentation/public-sector-contracts-summary-documentation-en.pdf"><span class="more more-bold">Read the summary</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">OpenText public sector industry solutions</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/solutions/industry/public-sector"><span class="more more-bold">Learn more</span></a></div>
                   </div>
                   <div class="col mb-4">
                      <div class="card card-body shadow p-2 p-xl-3">
-                        <div class="card-eyebrow"></div>
                         <h3 class="card-title-sm mb-1">Transform government services with personalized communications</h3><a class="mt-auto stretched-link" target="_blank" href="https://www.opentext.com/en/media/solution-overview/transform-government-services-with-personalized-communications-slo-en.pdf"><span class="more more-bold">Read the solution overview</span></a></div>
                   </div>
-			   </div>
-				          <div class="col">
-                        <div class="card card-body shadow p-2 p-xl-3">
-                           <div class="card-eyebrow"></div>
-                           <h3 class="card-title-sm mb-1">State of California SLP Price List</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/en/media/price-list/opentext-ca-slp-price-list-en.pdf"><span class="more more-bold">View the Government Price list </span></a></div>
-                     </div>
-				   
+                  <div class="col mb-4">
+                     <div class="card card-body shadow p-2 p-xl-3">
+                        <h3 class="card-title-sm mb-1">State of California SLP Price List</h3><a class="mt-auto stretched-link" href="https://www.opentext.com/en/media/price-list/opentext-ca-slp-price-list-en.pdf"><span class="more more-bold">View the Government Price list</span></a></div>
+                  </div>
                </div>
                <div class="d-flex justify-content-between gap">
                   <div class="glider-controls ml-auto"><button id="tab_label-4-glider-prev" class="btn btn-primary btn-circle" type="button"><svg class="btn-icon" width="20" height="20" viewBox="0 0 21 20" role="img" aria-hidden="true" focusable="false">
@@ -706,33 +641,25 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
    </div>
 </section></div>
-   <div class="iw_component" id="iw_comp1744865825285"><style>#iw_comp1744865825285{}</style><div 
-class="" 
-style="" 
-id=""
-><span><style>
+
+   <div class="iw_component" id="iw_comp1744865825285">
+<span><style>
 .card-img-top img[src*="416x274"] {
     aspect-ratio: 304 / 192;
     object-fit: contain;
     padding: 1rem;
 }
-</style></span></div>
+</style></span>
+    </div>
     </div>
   </div>
  </div>
 </div>
-<div class="container-fluid iw_section" id="sectionktsn8chi">
- <div class="row iw_row iw_stretch" id="rowktsn8chj">
-  <div class="iw_columns col-lg-12" id="colktsn8chk">
-   <div class="iw_placeholder" id="iw_placeholder1632142043189"></div>
-  </div>
- </div>
-</div>
+
 <div class="container-fluid iw_section" id="sectionktsn8chm">
  <div class="row iw_row iw_stretch" id="rowktsn8chn">
   <div class="iw_columns col-lg-12" id="colktsn8cho">
-   <div class="iw_placeholder" id="iw_placeholder1632142043193"></div>
-   <div class="iw_component" id="iw_comp1744319528861"><style>#iw_comp1744319528861{}</style><section id="interactive-lead-conversation" class="section bg-img-norepeat ">
+   <div class="iw_component" id="iw_comp1744319528861"><section id="interactive-lead-conversation" class="section bg-img-norepeat">
    <div class="container">
       <div class="row">
          <div class="col-12 col-md-4 col-lg-12 col-xl-3">
@@ -765,17 +692,11 @@ id=""
   </div>
  </div>
 </div>
-<div class="container-fluid iw_section" id="sectionktsn8chq">
- <div class="row iw_row iw_stretch" id="rowktsn8chr">
-  <div class="iw_columns col-lg-12" id="colktsn8chs">
-   <div class="iw_placeholder" id="iw_placeholder1632142043197"></div>
-  </div>
- </div>
-</div>
+
 <div class="container-fluid iw_section" id="sectionkvay5be8">
  <div class="row iw_row iw_stretch" id="rowkvay5be9">
   <div class="iw_columns col-lg-12" id="colkvay5bea">
-   <div class="iw_component" id="iw_comp1635425551087"><style>#iw_comp1635425551087{}</style><footer class="ot-footer">
+   <div class="iw_component" id="iw_comp1635425551087"><footer class="ot-footer">
    <div class="container">
       <h2 class="sr-only">OpenText footer</h2>
       <nav class="ot-footer__directory" aria-label="site directory">
@@ -862,40 +783,17 @@ id=""
                </div>
             </div>
          </div>
-      </nav><script src="https://assets.ot.digital/min/m/v1/js/opentext.min.js"></script><script src="https://assets.ot.digital/min/m/v1/js/gtm-alert.min.js"></script><script src="https://www.opentext.com/assets/scripts/customScripts.js"></script><script>
-		$(document).ready(function () {
-			$('div[id*="SAMECOLUMN"]').each(function(i,j){
-				$('#SAMECOLUMN').closest("div").prev().append($(j).html());
-				$('#SAMECOLUMN').closest("div").remove();
-			});
-			
-			var languageModal = $('#language-modal');
-
-			languageModal.appendTo('.ot-footer__directory');
-		});
-		</script><script type="text/javascript" src="https://assets.ot.digital/min/m/v1/js/language-alert.min.js"></script><script>
-			function readyLanguageAlert() {
-			    try {
-					otLanguageAlert.init();
-			    } catch (err) {
-			      console.warn("otLanguageAlert is not defined or failed to initialize:", err);
-			    }
-			  }
-
-			  if (document.readyState === 'loading') {
-			    document.addEventListener('DOMContentLoaded', readyLanguageAlert);
-			  } else {
-			    readyLanguageAlert();
-			  }
-		
-		</script><div class="ot-footer__company">
+      </nav>
+      <script src="https://assets.ot.digital/min/m/v1/js/opentext.min.js"></script>
+      <script src="https://www.opentext.com/assets/scripts/customScripts.js"></script>
+      <div class="ot-footer__company">
          <div class="ot-footer__legal-social">
             <div class="ot-footer__legal">
                <ul class="list-unstyled">
                   <li><a href="https://www.opentext.com/about/privacy" class="">Privacy Policy</a></li>
                   <li><a href="https://www.opentext.com/about/legal/website-terms-of-use" class="">Terms of Use</a></li>
                   <li><a href="https://www.opentext.com/about/cookie-policy" class="">Cookie Policy</a></li>
-                  <li><a href="https://www.opentext.com/about/forward-looking-statement" class="">Forward-Looking Statement  9182026 b</a></li>
+                  <li><a href="https://www.opentext.com/about/forward-looking-statement" class="">Forward-Looking Statement  9182026 g</a></li>
                </ul>
             </div>
             <ul class="ot-footer__social social list-inline">
@@ -911,6 +809,7 @@ id=""
 </footer></div>
   </div>
  </div>
-</div></div></body>
+</div>
+</div>
+</body>
 </html>
-	   
